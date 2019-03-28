@@ -1691,3 +1691,9 @@ a {
 .w3-border-pale-blue, .w3-hover-border-pale-blue:hover {
     border-color: #e7ffff!important
 }
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
