@@ -81,13 +81,13 @@
     }
 
     .img-center {
-        width: 100%;
         display: block;
         max-width: 100%;
         max-height: 100%;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
     }
 
     .img-cont {
@@ -172,15 +172,17 @@
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="w3-row-padding w3-center">
             <!-- Blank space for centering  -->
-            <div class="w3-col m2 w3-hide-small">
+            <div class="w3-col m1 w3-hide-small">
                 <img src="./images/blank.png" style="width:100%" alt="">
             </div>
 
             <div class="w3-col m2 s6 img-cont">
-                <a href="https://unclenearest.com" target="_blank">
-                    <img src="./images/uncle-nearest_logo.png" class="w3-hover-opacity img-center" alt="Uncle Nearest">
+                <a href="https://www.facebook.com/Lakewood-Medallion-Discount-Liquor-550453831702685/" target="_blank">
+                    <img src="./images/lakewood_logo.jpg" class="w3-hover-opacity img-center" alt="Lakewood Medalion"
+                        title="">
                 </a>
             </div>
+
 
             <div class="w3-col m2 s6 img-cont">
                 <a href="http://www.knoxstreetpub.com" target="_blank">
@@ -195,24 +197,39 @@
                 </a>
             </div>
 
-            <!-- Blank space for centering  -->
-            <div class="w3-col s3 w3-hide-medium w3-hide-large">
+            <!-- Blank space for centering on mobile
+            <div class="w3-col s2 w3-hide-medium w3-hide-large">
                 <img src="./images/blank.png" style="width:100%" alt="">
+            </div> -->
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://unclenearest.com" target="_blank">
+                    <img src="./images/uncle-nearest_logo.png" class="w3-hover-opacity img-center" alt="Uncle Nearest">
+                </a>
             </div>
 
             <div class="w3-col m2 s6 img-cont">
-                <a href="https://www.facebook.com/Lakewood-Medallion-Discount-Liquor-550453831702685/" target="_blank">
-                    <img src="./images/lakewood_logo.jpg" class="w3-hover-opacity img-center" alt="Lakewood Medalion"
+                <a href="https://www.garrisonbros.com" target="_blank">
+                    <img src="./images/gb_logo.png" class="w3-hover-opacity img-center" alt="Garrison Brothers"
                         title="">
                 </a>
             </div>
 
-        </div>
-        <div class="w3-row-padding w3-center">
             <!-- Blank space for centering  -->
             <div class="w3-col m1 w3-hide-small">
                 <img src="./images/blank.png" style="width:100%" alt="">
             </div>
+
+            <!-- </div>
+        <div class="w3-row-padding w3-center" style="margin-top: 2%"> -->
+            <!-- Blank space for centering  -->
+            <div class="w3-col m1 w3-hide-small">
+                <img src="./images/blank.png" alt="">
+            </div>
+            <div class="w3-col m1 w3-hide-small">
+                <img src="./images/blank.png" style="width:100%" alt="">
+            </div>
+
             <div class="w3-col m2 s6 img-cont">
                 <a href="https://www.buffalotracedistillery.com" target="_blank">
                     <img src="./images/bt_logo.png" class="w3-hover-opacity img-center" alt="Buffalo Trace">
@@ -230,6 +247,11 @@
                     <img src="./images/michters.jpg" class="w3-hover-opacity img-center" alt="Michter's">
                 </a>
             </div>
+
+            <!-- Blank space for centering on mobile
+            <div class="w3-col s2 w3-hide-medium w3-hide-large">
+                <img src="./images/blank.png" style="width:100%" alt="">
+            </div> -->
 
             <div class="w3-col m2 s6 img-cont">
                 <a href="https://sagamorespirit.com" target="_blank">
@@ -292,9 +314,12 @@
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick" />
                         <input type="hidden" name="hosted_button_id" value="F5DZ5N78PPEMG" />
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                        </form>                        
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                            border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
+                            alt="Donate with PayPal button" />
+                        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1"
+                            height="1" />
+                    </form>
                 </div>
             </div>
         </div>
@@ -311,8 +336,6 @@
             <a href="http://instagram.com/dallasbourbonclub"><i
                     class="fab fa-instagram fa-fw w3-hover-opacity w3-xlarge"></i></a>
         </div>
-        <p style="margin-bottom: 0">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
-                target="_blank" class="w3-hover-text-light-gray">w3.css</a></p>
     </footer>
 
     <script>
