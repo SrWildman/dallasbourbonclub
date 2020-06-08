@@ -13,7 +13,7 @@
     body,
     h1,
     h2,
-    h3,
+    h2,
     h4,
     h5,
     h6 {
@@ -72,6 +72,11 @@
             background-attachment: scroll;
             min-height: 400px;
         }
+
+        .w3-button:hover {
+            color: #555555 !important;
+            background-color: transparent !important;
+        }
     }
 
     .helper {
@@ -93,6 +98,7 @@
     .img-cont {
         height: 150px;
         position: relative;
+        margin-bottom: 5%;
     }
 </style>
 
@@ -106,10 +112,12 @@
                 <i class="fa fa-bars"></i>
             </a>
             <a href="#home" class="w3-bar-item w3-button">HOME</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> ABOUT</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-glass-whiskey"></i>
                 PARTNERS</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="https://dallasbourbonclub.square.site" class="w3-bar-item w3-button w3-hide-small"><i
+                    class="fa fa-user"></i> MEMBERS</a>
         </div>
 
         <!-- Navbar on small screens -->
@@ -117,13 +125,15 @@
             <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
             <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PARTNERS</a>
             <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="https://dallasbourbonclub.square.site" class="w3-bar-item w3-button"
+                onclick="toggleFunction()">MEMBERS</a>
         </div>
     </div>
 
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
+            <span class="w3-center  w3-xlarge w3-wide w3-animate-opacity">
                 <img src="images/dbc-logo.svg" alt="" />
             </span>
             <h1 style="display:none">Dallas Bourbon Club</h1>
@@ -132,22 +142,25 @@
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center">ABOUT US</h3>
-        <p class="w3-center"><em>We love bourbon</em></p>
-        <p>Started in 2013, Dallas Bourbon Club, has grown into the premier society for bourbon enthusiasts
-            in North Texas. Our members come from diverse backgrounds with various careers,
-            but all hold a common interest in bourbon.</p>
-        <p>The DBC holds quarterly events for members in addition to regular tastings and an annual field trip.
-            If you have a passion for bourbon, drop us a line and see what we are up to. Cheers!</p>
+        <div class="w3-center">
+            <h2 class="w3-center">ABOUT US</h2>
+            <!-- <h4><em>Mission Statement</em></h4> -->
+            <p>Networking around Dallas. An appreciation of America's spirit, bourbon. Giving back to our community.
+            </p>
+
+            <h4 class="w3-center"><em>We love bourbon</em></h4>
+            <p>Started in 2013, Dallas Bourbon Club, has grown into the premier society for bourbon enthusiasts
+                in North Texas. Our members come from diverse backgrounds with various careers,
+                but all hold a common interest in bourbon.</p>
+            <p>The DBC holds quarterly events for members in addition to regular tastings and an annual field trip.
+                If you have a passion for bourbon, drop us a line and see what we are up to. Cheers!</p>
+        </div>
         <div class="w3-row">
-            <div class="w3-col m12 w3-center w3-padding-large">
-                <p><b>Mission Statement</b></p><br>
-                <p>Networking around Dallas. An appreciation of America's spirit, bourbon. Giving back to our community.
-                </p>
+            <div class="w3-col m12 w3-center ">
                 <p><img src="./images/logo.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="dbc_logo"
                         width="35%"></p>
                 <a href="https://dallasbourbonclub.typeform.com/to/OmyHqt">
-                    <button class="w3-button w3-padding-large w3-light-grey">Membership
+                    <button class="w3-button  w3-light-grey">Membership
                         Inquiry</button>
                 </a>
             </div>
@@ -166,27 +179,31 @@
 
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center">Friends Of The Dallas Bourbon Club</h3>
-        <p class="w3-center"><em>Here are some awesome people we get to work with.</em></p><br>
+        <h2 class="w3-center">Friends Of The Dallas Bourbon Club</h2>
+        <h4 class="w3-center"><em>Here are some awesome people we get to work with.</em></h4><br>
 
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-        <div class="w3-row-padding w3-center">
+        <div class="w3-row-padding w3-center w3-hide-small">
             <!-- Blank space for centering  -->
             <div class="w3-col m1 w3-hide-small">
                 <img src="./images/blank.png" style="width:100%" alt="">
             </div>
 
             <div class="w3-col m2 s6 img-cont">
-                <a href="https://www.facebook.com/Lakewood-Medallion-Discount-Liquor-550453831702685/" target="_blank">
-                    <img src="./images/lakewood_logo.jpg" class="w3-hover-opacity img-center" alt="Lakewood Medalion"
-                        title="">
+                <a href="http://www.1792bourbon.com" target="_blank">
+                    <img src="./images/1792-logo.png" class="w3-hover-opacity img-center" alt="1792">
                 </a>
             </div>
 
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://www.bellemeadebourbon.com" target="_blank">
+                    <img src="./images/bmb.png" class="w3-hover-opacity img-center" alt="Belle Meade" title="">
+                </a>
+            </div>
 
             <div class="w3-col m2 s6 img-cont">
-                <a href="http://www.knoxstreetpub.com" target="_blank">
-                    <img src="./images/ksp.jpg" class="w3-hover-opacity img-center" alt="Knox Street Pub">
+                <a href="https://www.buffalotracedistillery.com" target="_blank">
+                    <img src="./images/bt_logo.png" class="w3-hover-opacity img-center" alt="Buffalo Trace">
                 </a>
             </div>
 
@@ -197,42 +214,25 @@
                 </a>
             </div>
 
-            <!-- Blank space for centering on mobile
-            <div class="w3-col s2 w3-hide-medium w3-hide-large">
-                <img src="./images/blank.png" style="width:100%" alt="">
-            </div> -->
-
             <div class="w3-col m2 s6 img-cont">
-                <a href="https://unclenearest.com" target="_blank">
-                    <img src="./images/uncle-nearest_logo.png" class="w3-hover-opacity img-center" alt="Uncle Nearest">
+                <a href="https://www.highwest.com" target="_blank">
+                    <img src="./images/highwest.png" class="w3-hover-opacity img-center" alt="High West">
                 </a>
             </div>
 
+        </div>
+
+        <div class="w3-row-padding w3-center w3-hide-small">
+
+            <!-- Blank space for centering  -->
+            <div class="w3-col m1 w3-hide-small">
+                <img src="./images/blank.png" style="width:100%" alt="">
+            </div>
+
             <div class="w3-col m2 s6 img-cont">
-                <a href="https://www.garrisonbros.com" target="_blank">
-                    <img src="./images/gb_logo.png" class="w3-hover-opacity img-center" alt="Garrison Brothers"
+                <a href="https://www.facebook.com/Lakewood-Medallion-Discount-Liquor-550453831702685/" target="_blank">
+                    <img src="./images/lakewood_logo.jpg" class="w3-hover-opacity img-center" alt="Lakewood Medalion"
                         title="">
-                </a>
-            </div>
-
-            <!-- Blank space for centering  -->
-            <div class="w3-col m1 w3-hide-small">
-                <img src="./images/blank.png" style="width:100%" alt="">
-            </div>
-
-            <!-- </div>
-        <div class="w3-row-padding w3-center" style="margin-top: 2%"> -->
-            <!-- Blank space for centering  -->
-            <div class="w3-col m1 w3-hide-small">
-                <img src="./images/blank.png" alt="">
-            </div>
-            <div class="w3-col m1 w3-hide-small">
-                <img src="./images/blank.png" style="width:100%" alt="">
-            </div>
-
-            <div class="w3-col m2 s6 img-cont">
-                <a href="https://www.buffalotracedistillery.com" target="_blank">
-                    <img src="./images/bt_logo.png" class="w3-hover-opacity img-center" alt="Buffalo Trace">
                 </a>
             </div>
 
@@ -248,10 +248,32 @@
                 </a>
             </div>
 
-            <!-- Blank space for centering on mobile
-            <div class="w3-col s2 w3-hide-medium w3-hide-large">
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://www.oldforester.com" target="_blank">
+                    <img src="./images/oldfo.png" class="w3-hover-opacity img-center" alt="Old Forester">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://pursuitspirits.com" target="_blank">
+                    <img src="./images/Pursuit.png" class="w3-hover-opacity img-center" alt="Pursuit Spirits">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="w3-row-padding w3-center w3-hide-small">
+
+            <!-- Blank space for centering  -->
+            <div class="w3-col m1 w3-hide-small">
                 <img src="./images/blank.png" style="width:100%" alt="">
-            </div> -->
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://georgeremus.com" target="_blank">
+                    <img src="./images/remus.png" class="w3-hover-opacity img-center" alt="Old Forester">
+                </a>
+            </div>
 
             <div class="w3-col m2 s6 img-cont">
                 <a href="https://sagamorespirit.com" target="_blank">
@@ -260,14 +282,124 @@
             </div>
 
             <div class="w3-col m2 s6 img-cont">
+                <a href="https://www.treatyoakdistilling.com" target="_blank">
+                    <img src="./images/treaty.png" class="w3-hover-opacity img-center" alt="Treaty Oak">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://whistlepigwhiskey.com" target="_blank">
+                    <img src="./images/whistlepig.png" class="w3-hover-opacity img-center" alt="Whistlepig Whiskey">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://wildturkeybourbon.com" target="_blank">
+                    <img src="./images/turkey.png" class="w3-hover-opacity img-center" alt="Wild Turkey">
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- Mobile -->
+        <div class="w3-row-padding w3-center w3-hide-medium w3-hide-large">
+
+            <div class="w3-col m2 s6 img-cont">
                 <a href="http://www.1792bourbon.com" target="_blank">
                     <img src="./images/1792-logo.png" class="w3-hover-opacity img-center" alt="1792">
                 </a>
             </div>
 
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://www.bellemeadebourbon.com" target="_blank">
+                    <img src="./images/bmb.png" class="w3-hover-opacity img-center" alt="Belle Meade" title="">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://www.buffalotracedistillery.com" target="_blank">
+                    <img src="./images/bt_logo.png" class="w3-hover-opacity img-center" alt="Buffalo Trace">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://www.celestialbeerworks.com" target="_blank">
+                    <img src="./images/celestial_logo.png" class="w3-hover-opacity img-center"
+                        alt="Celestial Beerworks">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://www.highwest.com" target="_blank">
+                    <img src="./images/highwest.png" class="w3-hover-opacity img-center" alt="High West">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://www.facebook.com/Lakewood-Medallion-Discount-Liquor-550453831702685/" target="_blank">
+                    <img src="./images/lakewood_logo.jpg" class="w3-hover-opacity img-center" alt="Lakewood Medalion"
+                        title="">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://www.makersmark.com" target="_blank">
+                    <img src="./images/maker-s-mark.svg" class="w3-hover-opacity img-center" alt="Makers Mark">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://michters.com" target="_blank">
+                    <img src="./images/michters.jpg" class="w3-hover-opacity img-center" alt="Michter's">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://www.oldforester.com" target="_blank">
+                    <img src="./images/oldfo.png" class="w3-hover-opacity img-center" alt="Old Forester">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://pursuitspirits.com" target="_blank">
+                    <img src="./images/Pursuit.png" class="w3-hover-opacity img-center" alt="Pursuit Spirits">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://georgeremus.com" target="_blank">
+                    <img src="./images/remus.png" class="w3-hover-opacity img-center" alt="Old Forester">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://sagamorespirit.com" target="_blank">
+                    <img src="./images/sagamore_logo.png" class="w3-hover-opacity img-center" alt="Sagamore Spirits">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://www.treatyoakdistilling.com" target="_blank">
+                    <img src="./images/treaty.png" class="w3-hover-opacity img-center" alt="Treaty Oak">
+                </a>
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://whistlepigwhiskey.com" target="_blank">
+                    <img src="./images/whistlepig.png" class="w3-hover-opacity img-center" alt="Whistlepig Whiskey">
+                </a>
+            </div>
+
             <!-- Blank space for centering  -->
-            <div class="w3-col m1 w3-hide-small">
+            <div class="w3-col m1 s3">
                 <img src="./images/blank.png" style="width:100%" alt="">
+            </div>
+
+            <div class="w3-col m2 s6 img-cont">
+                <a href="https://wildturkeybourbon.com" target="_blank">
+                    <img src="./images/turkey.png" class="w3-hover-opacity img-center" alt="Wild Turkey">
+                </a>
             </div>
 
         </div>
@@ -293,9 +425,7 @@
     </div>
 
     <!-- Container (Contact Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="contact">
-        <!-- <h3 class="w3-center">WHERE I WORK</h3>
-        <p class="w3-center"><em>I'd love your feedback!</em></p> -->
+    <div class="w3-content w3-container" id="contact">
 
         <div class="w3-row w3-padding-32 w3-section">
             <div class="w3-col m4 w3-container">
@@ -304,7 +434,7 @@
             <div class="w3-col m12 w3-panel w3-center">
                 <div class="w3-large w3-margin-bottom">
                     <a href="https://dallasbourbonclub.typeform.com/to/OmyHqt">
-                        <button class="w3-button w3-padding-large w3-light-grey">Membership
+                        <button class="w3-button  w3-light-grey">Membership
                             Inquiry</button>
                     </a>
                 </div>
