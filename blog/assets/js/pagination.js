@@ -22,7 +22,7 @@ checkReady(function ($) {
     $(document).ready(function () {
         if ($(".cssPagination .pages .page").length > 1) {
             $(".cssPagination .page:visible").addClass("paginationActive");
-            $(".cssPagination .pageNumber[href=#" + $(".page:visible").attr("id") + "]").addClass("paginationActive");
+            $(".cssPagination .pageNumber[href*=" + $(".page:visible").attr("id") + "]").addClass("paginationActive");
             $(".cssPagination .page:last-child").insertBefore(".cssPagination .page:first-child");
             $(".cssPagination .pageNumber").click(function (e) {
                 //e.preventDefault();
@@ -32,10 +32,10 @@ checkReady(function ($) {
                     $(this).addClass("paginationActive");
                 }
             });
-            var prevHTML = $(".cssPagination .prev").html();
-            var nextHTML = $(".cssPagination .next").html();
+            // var prevHTML = $(".cssPagination .prev").html();
+            // var nextHTML = $(".cssPagination .next").html();
             $(".cssPagination .prev, .cssPagination .next").remove();
-            $(".cssPagination .pageNav").prepend("<a href='" + $(".cssPagination .pageNumber.paginationActive").prev().attr("href") + "' class='prev'>" + prevHTML + "</a>");
+            // $(".cssPagination .pageNav").prepend("<a href='" + $(".cssPagination .pageNumber.paginationActive").prev().attr("href") + "' class='prev'>" + prevHTML + "</a>");
             $(".cssPagination .prev").show().click(function (e) {
                 //e.preventDefault();
                 if ($(".cssPagination .page:visible").prev(".page").length > 0) {
@@ -51,7 +51,7 @@ checkReady(function ($) {
                     }
                 }
             });
-            $(".cssPagination .pageNav").append("<a href='" + $(".cssPagination .pageNumber.paginationActive").next().attr("href") + "' class='next'>" + nextHTML + "</a>");
+            // $(".cssPagination .pageNav").append("<a href='" + $(".cssPagination .pageNumber.paginationActive").next().attr("href") + "' class='next'>" + nextHTML + "</a>");
             $(".cssPagination .next").show().click(function (e) {
                 //e.preventDefault();
                 if ($(".cssPagination .page:visible").next(".page").length > 0) {
